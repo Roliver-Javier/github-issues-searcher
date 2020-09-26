@@ -1,0 +1,18 @@
+.panel {
+  background: rgba(255, 255, 255, 0.884);
+  color: #000;
+  a {
+    color: rgb(50, 74, 194);
+  }
+  .label {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    .value {
+      color: rgb(59, 58, 58);
+      display: inline;
+      padding-left: 10px;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.container {
+  flex-direction: column;
+  width: 100%;
+  transition: all 2s;
+  input {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+.autocompleteFilter {
+  display: flex;
+}
+.active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+  div {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  &:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+input:focus {
+  outline: none;
+  background-color: #d6d6d6;
+}

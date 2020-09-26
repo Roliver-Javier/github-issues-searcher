@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`autocomplete Component renders the autocomplete 1`] = `
+<div
+  className="container"
+  data-test="container"
+>
+  <section
+    className="autocompleteFilter"
+  >
+    <input
+      className="primaryTxt"
+      data-test="input-autocomplete"
+      onChange={[Function]}
+      placeholder="Type Here"
+      type="text"
+      value=""
+    />
+  </section>
+  <section
+    className="panel container"
+  />
+</div>
+`;

@@ -1,0 +1,17 @@
+.panel {
+  background: rgba(122, 122, 122, 0.7);
+  color: #000;
+  a {
+    color: rgb(18, 44, 175);
+  }
+  .label {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    .value {
+      color: #fff;
+      display: inline;
+      padding-left: 10px;
+    }
+  }
+}

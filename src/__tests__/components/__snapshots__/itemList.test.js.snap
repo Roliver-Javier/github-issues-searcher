@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`itemList Component Have props renders the itemList 1`] = `ShallowWrapper {}`;
+
+exports[`itemList Component renders the itemList 1`] = `ShallowWrapper {}`;

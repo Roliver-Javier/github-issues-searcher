@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.wrapContainer {
+  display: flex;
+
+  & > * {
+    transition: all 2s;
+    margin-right: 10px;
+  }
+}
+
+.itemWrap {
+  min-width: 60%;
+  max-width: 80%;
+}
