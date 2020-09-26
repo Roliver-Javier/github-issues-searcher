@@ -5,7 +5,6 @@ import Autocomplete from '../../components/autocomplete/autocomplete';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import TestRenderer from 'react-test-renderer';
-import { findByTestAttr } from '../../../utils';
 
 configure({ adapter: new Adapter() });
 const mockStore = configureStore([]);

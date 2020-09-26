@@ -1,5 +1,104 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`itemList Component Have props renders the itemList 1`] = `ShallowWrapper {}`;
-
-exports[`itemList Component renders the itemList 1`] = `ShallowWrapper {}`;
+exports[`itemList Component renders the itemList 1`] = `
+<div
+  className="panel container"
+  data-test="test-container"
+>
+  <div
+    className="container"
+    data-test="test-container"
+  >
+    <div
+      className="header"
+    >
+      <a
+        href="https://github.com/facebook/react//issues/19901"
+      >
+        Bug: hydrating fails with nested paragraph and dangerouslySetInnerHTML
+      </a>
+      <span
+        className="repoInfo"
+      >
+        #19901  opened 2 days ago  by romeovs
+      </span>
+      <div
+        className="userContainer"
+      >
+        <img
+          alt="romeovs"
+          data-test="author-image"
+          height="100px"
+          src="https://avatars0.githubusercontent.com/u/1250185?v=4"
+          width="100px"
+        />
+        <div
+          className="userInfo"
+        >
+          <span
+            className="label"
+          >
+            Author:
+            <div
+              className="value"
+              data-test="author-nickname"
+            >
+              romeovs
+            </div>
+          </span>
+          <span
+            className="label status"
+          >
+            Status:
+            <ul>
+              <li
+                style={
+                  Object {
+                    "color": "green",
+                  }
+                }
+              >
+                <small
+                  data-test="issue-state"
+                >
+                  open
+                </small>
+              </li>
+            </ul>
+          </span>
+          <span
+            data-test="author-github"
+          >
+            <div
+              className="label"
+            >
+              Github: 
+            </div>
+            <small>
+              <a
+                href="https://api.github.com/users/romeovs"
+              >
+                https://api.github.com/users/romeovs
+              </a>
+            </small>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="labelsContainer"
+    >
+      <span
+        className="itemLabels"
+        style={
+          Object {
+            "backgroundColor": "#d4c5f9",
+          }
+        }
+      >
+        Status: Unconfirmed
+      </span>
+    </div>
+  </div>
+</div>
+`;
