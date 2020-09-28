@@ -1,8 +1,8 @@
 import {
-  GET_ISSUES_REPO,
-  FETCH_ISSUES_INFO_FROM_REPO,
+  GET_ISSUES,
+  FETCH_ISSUES_SUCCESS,
   FILTER_ISSUES,
-  GET_FIELTERED_ISSUES,
+  GET_FILTER_ISSUES,
   ISSUE_SELECTED,
   SET_ISSUE_SELECTED,
   SET_ISSUES_TYPED,
@@ -27,11 +27,11 @@ describe('Issues Epic Observables', () => {
   });
 
   it('Should return action with successful data fetched', (done) => {
-    const action$ = of({ type: GET_ISSUES_REPO });
+    const action$ = of({ type: GET_ISSUES });
     const epic$ = getIssuesEpic(action$);
     subscription.add(
       epic$.subscribe((action) => {
-        expect(action.type).toBe(FETCH_ISSUES_INFO_FROM_REPO);
+        expect(action.type).toBe(FETCH_ISSUES_SUCCESS);
         done();
       })
     );
@@ -42,7 +42,7 @@ describe('Issues Epic Observables', () => {
     const epic$ = saveFilteredIssuesEpic(action$);
     subscription.add(
       epic$.subscribe((action) => {
-        expect(action.type).toBe(GET_FIELTERED_ISSUES);
+        expect(action.type).toBe(GET_FILTER_ISSUES);
         done();
       })
     );

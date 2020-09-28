@@ -11,7 +11,7 @@ import {
 } from '../actions/issuesAction';
 
 import {
-  GET_ISSUES_REPO,
+  GET_ISSUES,
   ISSUE_SELECTED,
   FILTER_ISSUES,
   SET_ISSUES_TYPED,
@@ -20,7 +20,7 @@ import {
 /** EPICS */
 export const getIssuesEpic = (action$) =>
   action$.pipe(
-    ofType(GET_ISSUES_REPO),
+    ofType(GET_ISSUES),
     switchMap(() =>
       Api.getIssues().pipe(catchError((error) => getIssueFailure(error)))
     ),

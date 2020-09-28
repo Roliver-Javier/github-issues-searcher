@@ -1,6 +1,6 @@
 import {
-  FETCH_ISSUES_INFO_FROM_REPO,
-  GET_FIELTERED_ISSUES,
+  FETCH_ISSUES_SUCCESS,
+  GET_FILTER_ISSUES,
   ISSUE_TYPED,
   SET_ISSUE_SELECTED,
 } from '../../store/types';
@@ -42,7 +42,7 @@ describe('Issues Reducer', () => {
 
   it('Should return new data filtered if receiving type', () => {
     const data = {
-      type: GET_FIELTERED_ISSUES,
+      type: GET_FILTER_ISSUES,
       payload: [...mockData.dataFiltered],
     };
     const newState = issuesReducer(initialState, data);
@@ -51,7 +51,7 @@ describe('Issues Reducer', () => {
 
   it('Should return new issues data if receiving type', () => {
     const data = {
-      type: FETCH_ISSUES_INFO_FROM_REPO,
+      type: FETCH_ISSUES_SUCCESS,
       payload: [...mockData.issues],
     };
     const newState = issuesReducer(initialState, data);

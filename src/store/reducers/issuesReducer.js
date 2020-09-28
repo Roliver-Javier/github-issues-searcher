@@ -1,6 +1,6 @@
 import {
-  FETCH_ISSUES_INFO_FROM_REPO,
-  GET_FIELTERED_ISSUES,
+  FETCH_ISSUES_SUCCESS,
+  GET_FILTER_ISSUES,
   ISSUE_TYPED,
   SET_ISSUE_SELECTED,
 } from '../types';
@@ -14,10 +14,10 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_ISSUES_INFO_FROM_REPO:
+    case FETCH_ISSUES_SUCCESS:
       return { ...state, data: [...action.payload] };
 
-    case GET_FIELTERED_ISSUES:
+    case GET_FILTER_ISSUES:
       return { ...state, dataFiltered: [...action.payload] };
 
     case ISSUE_TYPED:

@@ -1,18 +1,18 @@
 import {
-  FETCH_ISSUES_INFO_FROM_REPO,
+  FETCH_ISSUES_SUCCESS,
   ISSUE_TYPED,
   FETCH_ISSUES_REJECTED,
   SET_ISSUE_SELECTED,
-  GET_FIELTERED_ISSUES,
-  GET_ISSUES_REPO,
+  GET_FILTER_ISSUES,
+  GET_ISSUES,
   FILTER_ISSUES,
   ISSUE_SELECTED,
 } from '../types';
 
 /** actions */
-export const fetchIssuesRepoInfo = () => ({ type: GET_ISSUES_REPO });
+export const fetchIssuesRepoInfo = () => ({ type: GET_ISSUES });
 export const getIssuesSuccess = (issues) => ({
-  type: FETCH_ISSUES_INFO_FROM_REPO,
+  type: FETCH_ISSUES_SUCCESS,
   payload: issues,
 });
 export const getIssueFailure = (error) => ({
@@ -30,7 +30,7 @@ export const setIssueSelected = (issueSelected) => ({
 });
 
 export const getFielterIssues = (filteredIssues) => ({
-  type: GET_FIELTERED_ISSUES,
+  type: GET_FILTER_ISSUES,
   payload: filteredIssues,
 });
 export const saveFilteredIssues = (filteredIssues) => ({
